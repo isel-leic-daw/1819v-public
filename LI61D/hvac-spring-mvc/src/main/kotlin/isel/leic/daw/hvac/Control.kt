@@ -3,6 +3,9 @@ package isel.leic.daw.hvac
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Service
 
+const val MINIMUM_TEMPERATURE = 16
+const val MAXIMUM_TEMPERATURE = 32
+
 @Service
 class Control(private val cooler: Cooler,
               private val heater: Heater,
@@ -43,6 +46,9 @@ class Control(private val cooler: Cooler,
 
     override var desiredTemperature: Int = 22
         @Synchronized set(value) {
+            if (value < MINIMUM_TEMPERATURE || MAXIMUM_TEMPERATURE > 32)
+                throw InvalidTemperature()
+
             field = value
             if (enabled) doControl()
         }
