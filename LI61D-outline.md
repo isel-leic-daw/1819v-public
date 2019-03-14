@@ -11,8 +11,8 @@
 * The [Architecture of the World Wide Web](https://www.w3.org/TR/webarch/)
 * The HTTP protocol: Introduction
 * Documentation:
-  * [Introduction to Web APIs](https://github.com/isel-leic-daw/1819v-public/wiki/Web-APIs)
-  * [Designing evolvable Web APIs: Chapter 1](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch01.html)
+  * ["Introduction to Web APIs"](https://github.com/isel-leic-daw/1819v-public/wiki/Web-APIs)
+  * ["Designing evolvable Web APIs: Chapter 1"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch01.html)
 
 
 ## Week 2
@@ -31,8 +31,8 @@
 * Goal: Creating a Web API for the HVAC controller application
 * The HTTP protocol, revisited
   * Request-response message exchange semantics and pattern
-  * Request methods [semantics](https://tools.ietf.org/html/rfc7231#section-4.3) and [properties](https://tools.ietf.org/html/rfc7231#section-4.2).
-  * Response status code [semantics](https://tools.ietf.org/html/rfc7231#section-6).
+  * Request methods [semantics](https://tools.ietf.org/html/rfc7231#section-4.3) and [properties](https://tools.ietf.org/html/rfc7231#section-4.2)
+  * Response status code [semantics](https://tools.ietf.org/html/rfc7231#section-6)
   * ["HTTP Method selection"](https://github.com/isel-leic-daw/1819v-public/wiki/HTTP-method-selection)
 * Documentation:
   * ["Designing evolvable Web APIs: Chapter 2"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch02.html)
@@ -47,7 +47,7 @@
   * Threading model
 * Documentation
   * [HTTP Status Code registry](http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml)
-  * ["How to Think About HTTP Status Codes"](https://www.mnot.net/blog/2017/05/11/status_codes).
+  * ["How to Think About HTTP Status Codes"](https://www.mnot.net/blog/2017/05/11/status_codes)
   * ["How to fail in HTTP APIs"](https://github.com/isel-leic-daw/1819v-public/wiki/How-to-fail-in-HTTP-APIs)
 
 ### 6/03/2019 - Resources vs External Representations: Introduction
@@ -58,12 +58,20 @@
 * Documentation:
   * ["Designing evolvable Web APIs: Chapter 5"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch05.html)
 
-
 ## Week 4
-### 11/02 - Practical class
+### 11/02/2019 - Practical class
 * Project phase 1 - Design of the HTTP-based API 
-### 13/02 - TBD
-
+### 13/02/2019 - External Representations
+* Goal: Moving HVAC Web API towards RMM Level 3
+* Representation design, hypermedia and web linking
+  * [Web Linking](https://tools.ietf.org/html/rfc5988)
+  * [HAL-Hypermedia Application Language](https://tools.ietf.org/html/draft-kelly-json-hal-08)
+  * [HAL-forms](https://rwcbook.github.io/hal-forms/)
+  * [Collection+JSON](http://amundsen.com/media-types/collection/)
+* Documentation:
+  * [IANA Link Relations Registry](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
+  * [IANA Media Types Registry](https://www.iana.org/assignments/media-types/media-types.xhtml)
+  * ["Designing evolvable Web APIs: Chapter 6"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch06.html)
 
 ## Week 5
 
