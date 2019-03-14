@@ -61,7 +61,7 @@
 ## Week 4
 ### 11/02/2019 - Practical class
 * Project phase 1 - Design of the HTTP-based API 
-### 13/02/2019 - External Representations
+### 13/02/2019 - Designing Web APIs: External Representations
 * Goal: Moving HVAC Web API towards RMM Level 3
 * Representation design, hypermedia and web linking
   * [Web Linking](https://tools.ietf.org/html/rfc5988)
@@ -69,9 +69,10 @@
   * [HAL-forms](https://rwcbook.github.io/hal-forms/)
   * [Collection+JSON](http://amundsen.com/media-types/collection/)
 * Documentation:
+  * ["Designing evolvable Web APIs: Chapter 6"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch06.html)
+* For reference:
   * [IANA Link Relations Registry](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
   * [IANA Media Types Registry](https://www.iana.org/assignments/media-types/media-types.xhtml)
-  * ["Designing evolvable Web APIs: Chapter 6"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch06.html)
 
 ## Week 5
 
