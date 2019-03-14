@@ -46,7 +46,7 @@ class Control(private val cooler: Cooler,
 
     override var desiredTemperature: Int = 22
         @Synchronized set(value) {
-            if (value < MINIMUM_TEMPERATURE || MAXIMUM_TEMPERATURE > 32)
+            if (value < MINIMUM_TEMPERATURE || value > MAXIMUM_TEMPERATURE)
                 throw InvalidTemperature()
 
             field = value

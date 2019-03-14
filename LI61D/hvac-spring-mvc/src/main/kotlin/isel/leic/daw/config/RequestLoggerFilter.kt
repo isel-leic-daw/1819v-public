@@ -1,4 +1,4 @@
-package isel.leic.daw
+package isel.leic.daw.config
 
 import org.slf4j.LoggerFactory
 import org.springframework.core.annotation.Order

@@ -11,7 +11,7 @@ data class HvacEnabledValue @JsonCreator constructor(val value: Boolean)
 @RequestMapping(value= ["/hvac"])
 class HvacController(private val hvac: HVAC) {
 
-    @GetMapping(path = [""])
+    @GetMapping
     fun getHvacState() = HvacState(hvac.enabled)
 
     @GetMapping(path = ["/enabled"])
