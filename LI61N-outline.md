@@ -43,6 +43,14 @@
 
 ## Week 4
 
+* The link concept and the [Web Linking](https://tools.ietf.org/html/rfc8288) specification.
+  * Required attributes and [link relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml).
+  * Example: the `search` link relation and the [Open Search](http://www.opensearch.org/Home) specification.
+* The [Hypermedia Application Language (HAL)](http://stateless.co/hal_specification.html).
+
+* The [Siren](https://github.com/kevinswiber/siren) hypermedia specification.
+
+
 ## Week 5
 
 ## Week 6
