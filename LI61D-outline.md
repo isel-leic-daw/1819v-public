@@ -14,7 +14,6 @@
   * ["Introduction to Web APIs"](https://github.com/isel-leic-daw/1819v-public/wiki/Web-APIs)
   * ["Designing evolvable Web APIs: Chapter 1"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch01.html)
 
-
 ## Week 2
 ### 25/02/2019 - Software design considerations
 * Dependency Injection (DI): Motivation and consequences
@@ -75,6 +74,10 @@
   * [IANA Media Types Registry](https://www.iana.org/assignments/media-types/media-types.xhtml)
 
 ## Week 5
+### 18/02/2019 - Practical class
+* Project phase 1 - Design of the HTTP-based API 
+### 20/02/2019 - Designing Web APIs: External Representations (Continued)
+* Goal: Moving HVAC Web API towards RMM Level 3 (continued)
 
 ## Week 6
 
