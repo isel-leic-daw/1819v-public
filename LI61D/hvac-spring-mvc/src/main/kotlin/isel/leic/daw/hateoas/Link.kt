@@ -10,6 +10,7 @@ import com.fasterxml.jackson.annotation.JsonInclude
 @JsonInclude(JsonInclude.Include.NON_NULL)
 data class Link @JsonCreator constructor(
         val href: String,
+        val title: String? = null,
         val templated: Boolean? = null)
 
 /**
