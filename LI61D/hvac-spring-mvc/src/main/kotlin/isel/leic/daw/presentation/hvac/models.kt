@@ -17,10 +17,9 @@ data class HvacState @JsonCreator constructor(val enabled: Boolean) : HalObject(
 /**
  * Output model for the HVAC enabled state.
  */
-data class HvacEnabledValue @JsonCreator constructor(val value: Boolean) : HalObject(
+data class HvacEnabledResult @JsonCreator constructor(val value: Boolean) : HalObject(
         mapOf(
                 "self" to Link(HVAC_ENABLED_URI, "Reload"),
                 "parent" to Link(HVAC_URI, "HVAC state")
         )
 )
-

@@ -11,10 +11,10 @@ class HvacController(private val hvac: HVAC) {
     fun getHvacState() = HvacState(hvac.enabled)
 
     @GetMapping(path = [ENABLED_ROUTE])
-    fun getHvacEnabledState() = HvacEnabledValue(hvac.enabled)
+    fun getHvacEnabledState() = HvacEnabledResult(hvac.enabled)
 
     @PutMapping(path = [ENABLED_ROUTE])
-    fun setHvacEnabledState(@RequestBody value: HvacEnabledValue): HvacState {
+    fun setHvacEnabledState(@RequestBody value: HvacEnabledResult): HvacState {
         hvac.enabled = value.value
         return HvacState(hvac.enabled)
     }
