@@ -10,6 +10,9 @@ import javax.servlet.ServletResponse
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
+/**
+ * Class whose for logging all requests by extending the servlet container's request handling pipeline.
+ */
 @Component
 @Order(1)
 class RequestLoggerFilter : Filter {

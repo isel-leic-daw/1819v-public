@@ -1,4 +1,4 @@
-package isel.leic.daw.hvac
+package isel.leic.daw.services.hvac
 
 interface Sensor {
     val temperature: Int

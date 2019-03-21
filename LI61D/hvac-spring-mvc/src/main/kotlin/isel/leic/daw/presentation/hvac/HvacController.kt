@@ -1,9 +1,9 @@
-package isel.leic.daw
+package isel.leic.daw.presentation.hvac
 
 import com.fasterxml.jackson.annotation.JsonCreator
-import isel.leic.daw.hateoas.HalObject
-import isel.leic.daw.hateoas.Link
-import isel.leic.daw.hvac.HVAC
+import isel.leic.daw.presentation.hateoas.HalObject
+import isel.leic.daw.presentation.hateoas.Link
+import isel.leic.daw.services.hvac.HVAC
 import org.springframework.web.bind.annotation.*
 
 private const val HVAC_BASE_URI = "/hvac"

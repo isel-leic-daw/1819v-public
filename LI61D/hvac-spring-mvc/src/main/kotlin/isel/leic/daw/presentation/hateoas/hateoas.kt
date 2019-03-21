@@ -1,4 +1,4 @@
-package isel.leic.daw.hateoas
+package isel.leic.daw.presentation.hateoas
 
 import com.fasterxml.jackson.annotation.JsonCreator
 import com.fasterxml.jackson.annotation.JsonInclude
@@ -17,3 +17,4 @@ data class Link @JsonCreator constructor(
  * Abstract class to be used as a base class for HAL representations.
  */
 abstract class HalObject(val _links: Map<String, Link>)
+

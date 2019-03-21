@@ -1,6 +1,6 @@
-package isel.leic.daw.hvac.simulation
+package isel.leic.daw.services.hvac.simulation
 
-import isel.leic.daw.hvac.Sensor
+import isel.leic.daw.services.hvac.Sensor
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.stereotype.Component
 
