@@ -18,3 +18,13 @@ data class Link @JsonCreator constructor(
  */
 abstract class HalObject(val _links: Map<String, Link>)
 
+/**
+ * Class used for error models, based on the <a href="https://tools.ietf.org/html/rfc7807">Problem Json spec</a>
+ */
+@JsonInclude(JsonInclude.Include.NON_NULL)
+data class ProblemJson(
+        val type: String,
+        val title: String,
+        val detail: String,
+        val status: Int
+)

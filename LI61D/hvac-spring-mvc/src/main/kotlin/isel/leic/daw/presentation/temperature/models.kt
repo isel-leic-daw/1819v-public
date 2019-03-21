@@ -31,4 +31,3 @@ data class TemperatureResult(val value: Int, private val self: String, private v
  * Input model for temperature values, expressed in Celsius degrees.
  */
 data class TemperatureValue @JsonCreator constructor(val value: Int)
-

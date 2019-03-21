@@ -1,3 +1,3 @@
 package isel.leic.daw.services.hvac
 
-class InvalidTemperature : IllegalArgumentException("Target temperature is not within acceptable bounds")
+class InvalidTemperature(detail: String) : IllegalArgumentException(detail)

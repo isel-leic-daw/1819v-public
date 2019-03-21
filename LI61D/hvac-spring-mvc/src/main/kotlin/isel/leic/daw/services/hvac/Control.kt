@@ -47,7 +47,8 @@ class Control(private val cooler: Cooler,
     override var desiredTemperature: Int = 22
         @Synchronized set(value) {
             if (value < MINIMUM_TEMPERATURE || value > MAXIMUM_TEMPERATURE)
-                throw InvalidTemperature()
+                throw InvalidTemperature("The specified temperature $value is not in the accepted interval " +
+                        "[$MINIMUM_TEMPERATURE..$MAXIMUM_TEMPERATURE]")
 
             field = value
             if (enabled) doControl()
