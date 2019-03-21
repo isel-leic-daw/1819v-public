@@ -78,6 +78,11 @@
 * Project phase 1 - Design of the HTTP-based API 
 ### 20/02/2019 - Designing Web APIs: External Representations (Continued)
 * Goal: Moving HVAC Web API towards RMM Level 3 (continued)
+* Representation design, hypermedia and web linking (revisited)
+  * An example: [Amazon API gateway](https://docs.aws.amazon.com/apigateway/api-reference/)
+  * Representation of domain specific link relations 
+  * Error representation with [Problem-Json](https://tools.ietf.org/html/rfc7807)
+* [Exception handling in Spring MVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-exceptionhandler)
 
 ## Week 6
 
