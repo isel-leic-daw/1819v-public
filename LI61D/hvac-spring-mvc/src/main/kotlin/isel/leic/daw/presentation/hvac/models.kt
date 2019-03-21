@@ -23,3 +23,8 @@ data class HvacEnabledResult @JsonCreator constructor(val value: Boolean) : HalO
                 "parent" to Link(HVAC_URI, "HVAC state")
         )
 )
+
+/**
+ * Input model for the HVAC enabled state.
+ */
+data class HvacEnabledValue  @JsonCreator constructor(val value: Boolean)
