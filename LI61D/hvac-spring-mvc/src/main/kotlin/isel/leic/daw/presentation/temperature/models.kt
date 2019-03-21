@@ -11,11 +11,11 @@ import isel.leic.daw.presentation.hateoas.Link
  * @property desired    The target temperature
  */
 data class TemperatureStatus @JsonCreator constructor(val current: Int, val desired: Int) : HalObject(
-        mapOf(
-                "self" to Link(TEMPERATURE_URI, "Reload"),
-                "current" to Link(CURRENT_URI, "Current temperature"),
-                "desired" to Link(TARGET_URI, "Desired temperature")
-        )
+    mapOf(
+        "self" to Link(TEMPERATURE_URI, "Reload"),
+        "http://docs.hvac.api/rels/temperature/current" to Link(CURRENT_URI, "Current temperature"),
+        "http://docs.hvac.api/rels/temperature/desired" to Link(TARGET_URI, "Desired temperature")
+    )
 )
 
 /**
@@ -24,7 +24,7 @@ data class TemperatureStatus @JsonCreator constructor(val current: Int, val desi
  * @property value  The temperature value
  */
 data class TemperatureResult(val value: Int, private val self: String, private val parent: String) : HalObject(
-        mapOf("self" to Link(self), "parent" to Link(parent))
+    mapOf("self" to Link(self), "http://docs.hvac.api/rels/temperature" to Link(parent))
 )
 
 /**
