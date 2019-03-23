@@ -1,4 +1,4 @@
-package isel.leic.daw.hvac
+package isel.leic.daw
 
 import org.junit.Test
 import org.junit.runner.RunWith

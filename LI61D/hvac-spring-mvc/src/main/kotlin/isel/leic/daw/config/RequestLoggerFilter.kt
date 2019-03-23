@@ -1,4 +1,4 @@
-package isel.leic.daw
+package isel.leic.daw.config
 
 import org.slf4j.LoggerFactory
 import org.springframework.core.annotation.Order
@@ -10,6 +10,9 @@ import javax.servlet.ServletResponse
 import javax.servlet.http.HttpServletRequest
 import javax.servlet.http.HttpServletResponse
 
+/**
+ * Class whose for logging all requests by extending the servlet container's request handling pipeline.
+ */
 @Component
 @Order(1)
 class RequestLoggerFilter : Filter {

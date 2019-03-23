@@ -1,7 +1,7 @@
-package isel.leic.daw.hvac.simulation
+package isel.leic.daw.services.hvac.simulation
 
-import isel.leic.daw.hvac.Cooler
-import isel.leic.daw.hvac.Heater
+import isel.leic.daw.services.hvac.Cooler
+import isel.leic.daw.services.hvac.Heater
 import org.slf4j.LoggerFactory
 import org.springframework.stereotype.Component
 import java.util.*
