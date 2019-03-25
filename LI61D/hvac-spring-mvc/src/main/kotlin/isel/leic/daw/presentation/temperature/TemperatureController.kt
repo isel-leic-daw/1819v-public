@@ -1,5 +1,6 @@
 package isel.leic.daw.presentation.temperature
 
+import isel.leic.daw.presentation.AuthorizationRequired
 import isel.leic.daw.presentation.hvac.HVAC_URI
 import isel.leic.daw.presentation.hateoas.ProblemJson
 import isel.leic.daw.services.hvac.HVAC
@@ -37,6 +38,7 @@ class TemperatureController(private val hvac: HVAC) {
     fun getDesiredTemperature() = TemperatureResult(hvac.desiredTemperature, TARGET_URI, HVAC_URI)
 
     @PutMapping(path = [TARGET_ROUTE])
+    @AuthorizationRequired
     fun setDesiredTemperature(@RequestBody temperature: TemperatureValue): TemperatureStatus {
         hvac.desiredTemperature = temperature.value
         return TemperatureStatus(hvac.currentTemperature, hvac.desiredTemperature)
