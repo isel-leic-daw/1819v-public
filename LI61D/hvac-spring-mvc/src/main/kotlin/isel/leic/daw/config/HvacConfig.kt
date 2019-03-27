@@ -20,6 +20,9 @@ class HvacConfig : WebMvcConfigurer {
         registry.addInterceptor(AuthorizationInterceptor())
     }
 
+    /**
+     * Globally applicable exception handler
+     */
     @ExceptionHandler
     fun handleInvalidTemperature(e: AuthorizationException): ResponseEntity<ProblemJson> {
         return ResponseEntity
