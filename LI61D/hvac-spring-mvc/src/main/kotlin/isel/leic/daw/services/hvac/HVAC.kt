@@ -5,4 +5,5 @@ interface HVAC {
     var desiredTemperature: Int
     val currentTemperature: Int
     var enabled: Boolean
+    var versionNumber: Int
 }

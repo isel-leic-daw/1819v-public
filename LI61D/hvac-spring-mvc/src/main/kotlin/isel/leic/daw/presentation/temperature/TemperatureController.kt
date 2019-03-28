@@ -1,8 +1,8 @@
 package isel.leic.daw.presentation.temperature
 
 import isel.leic.daw.presentation.AuthorizationRequired
-import isel.leic.daw.presentation.hvac.HVAC_URI
 import isel.leic.daw.presentation.hateoas.ProblemJson
+import isel.leic.daw.presentation.hvac.HVAC_URI
 import isel.leic.daw.services.hvac.HVAC
 import isel.leic.daw.services.hvac.InvalidTemperature
 import org.springframework.http.HttpStatus
@@ -27,7 +27,12 @@ class TemperatureController(private val hvac: HVAC) {
     }
 
     @GetMapping
-    fun getTemperatureStatus() = TemperatureStatus(hvac.currentTemperature, hvac.desiredTemperature)
+    fun getTemperatureStatus(): ResponseEntity<TemperatureStatus> {
+        return ResponseEntity
+                .ok()
+                .eTag(hvac.versionNumber.toString())
+                .body(TemperatureStatus(hvac.currentTemperature, hvac.desiredTemperature))
+    }
 
     @GetMapping(path = [CURRENT_ROUTE])
     fun getCurrentTemperature(req: HttpServletRequest) : TemperatureResult {

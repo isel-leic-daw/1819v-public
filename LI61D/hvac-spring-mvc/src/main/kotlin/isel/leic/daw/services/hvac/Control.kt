@@ -9,7 +9,13 @@ const val MAXIMUM_TEMPERATURE = 32
 @Service
 class Control(private val cooler: Cooler,
               private val heater: Heater,
-              private val sensor: Sensor) : HVAC {
+              private val sensor: Sensor,
+              override var versionNumber: Int = 0) : HVAC {
+
+    @Synchronized
+    private fun incrementVersionNumber() {
+        versionNumber += 1;
+    }
 
     private val logger = LoggerFactory.getLogger(Control::class.java)
 
@@ -29,6 +35,7 @@ class Control(private val cooler: Cooler,
 
         sensor.temperatureListener = {
             logger.info("Temperature has changed to ${it.temperature}")
+            incrementVersionNumber()
             if (hasTargetBeenReached()) {
                 turnOff()
             }
@@ -52,6 +59,7 @@ class Control(private val cooler: Cooler,
 
             field = value
             if (enabled) doControl()
+            incrementVersionNumber()
         }
         @Synchronized get() = field
 
