@@ -58,9 +58,9 @@
   * ["Designing evolvable Web APIs: Chapter 5"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch05.html)
 
 ## Week 4
-### 11/02/2019 - Practical class
+### 11/03/2019 - Practical class
 * Project phase 1 - Design of the HTTP-based API 
-### 13/02/2019 - Designing Web APIs: External Representations
+### 13/03/2019 - Designing Web APIs: External Representations
 * Goal: Moving HVAC Web API towards RMM Level 3
 * Representation design, hypermedia and web linking
   * [Web Linking](https://tools.ietf.org/html/rfc5988)
@@ -74,9 +74,9 @@
   * [IANA Media Types Registry](https://www.iana.org/assignments/media-types/media-types.xhtml)
 
 ## Week 5
-### 18/02/2019 - Practical class
+### 18/03/2019 - Practical class
 * Project phase 1 - Design of the HTTP-based API 
-### 20/02/2019 - Designing Web APIs: External Representations (Continued)
+### 20/03/2019 - Designing Web APIs: External Representations (Continued)
 * Goal: Moving HVAC Web API towards RMM Level 3 (continued)
 * Representation design, hypermedia and web linking (revisited)
   * An example: [Amazon API gateway](https://docs.aws.amazon.com/apigateway/api-reference/)
@@ -85,6 +85,24 @@
 * [Exception handling in Spring MVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-exceptionhandler)
 
 ## Week 6
+### 25/03/2019 - Practical class
+* Project phase 1 - Design and implementation of the HTTP-based API 
+### 27/03/2019 - Designing Web APIs (Conclusion)
+* Goal: Moving HVAC Web API towards RMM Level 3 (continued)
+* [HTTP Caching](https://tools.ietf.org/html/rfc7234)
+  * Headers `Cache-Control`, `ETag`, `Vary`
+  * [Conditional Requests](https://tools.ietf.org/html/rfc7232)
+* Spring MVC architecture, revisited
+  * Global exception handlers (`@ControllerAdvice`)
+  * Interceptors
+  * Message Converters
+  * [MVC Config](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-config)
+* Documentation on designing Web APIs:
+  * [Principled Design of the Modern Web Architecture](https://www.ics.uci.edu/~taylor/documents/2002-REST-TOIT.pdf)
+  * [REST APIs must be hypertext-driven](http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven)
+* For reference:
+  * [Siren](https://github.com/kevinswiber/siren)
+  * [Spring MVC HTTP Caching](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-caching)
 
 ## Week 7
 
