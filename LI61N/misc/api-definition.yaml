@@ -1,0 +1,80 @@
+openapi: 3.0.0
+info:
+  title: "the api name"
+  description: "the description"
+  version: "1.0"
+servers:
+  - url: "http://api.example.com"
+    description: "production"
+  - url: "http://stage.example.com"
+    description: "staging"
+paths:
+  "/courses":
+    description: course list
+    get:
+      description: gets all courses
+      responses:
+        "200":
+          "$ref": "#/components/responses/course-list"
+    post:
+      description: creates a course
+      requestBody:
+        description: course creation
+        content:
+          "application/x-www-form-urlencoded":
+            schema:
+              type: object
+              properties:
+                acronym:
+                  type: string
+                name:
+                  type: string
+                description:
+                  type: string
+      responses:
+        "201":
+          "$ref": "#/components/responses/course-list"
+  "/courses/{acr}":
+    description: course
+    get:
+      responses:
+        "200":
+          "$ref": "#/components/responses/course-list"
+      parameters:
+        - name: acr
+          in: path
+          required: true
+          schema:
+            type: string
+components:
+  schemas:
+    course-item:
+      type: object
+      required: [name, description, acronym]
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        acronym:
+          type: string
+    course-list:
+      type: array
+      items:
+        "$ref": "#/components/schemas/course-item"
+  responses:
+    "course-detail":
+      description: course detail
+      content:
+        "application/json":
+          schema:
+            "$ref": "#/components/schemas/course-item"
+    "course-list":
+      description: course list
+      content:
+        "application/json":
+          schema:
+            "$ref": "#/components/schemas/course-list"
+    "created":
+      description: created
+    
