@@ -1,5 +1,6 @@
 package isel.leic.daw.presentation.hvac
 
+import isel.leic.daw.presentation.AuthorizationRequired
 import isel.leic.daw.services.hvac.HVAC
 import org.springframework.web.bind.annotation.*
 
@@ -14,6 +15,7 @@ class HvacController(private val hvac: HVAC) {
     fun getHvacEnabledState() = HvacEnabledResult(hvac.enabled)
 
     @PutMapping(path = [ENABLED_ROUTE])
+    @AuthorizationRequired
     fun setHvacEnabledState(@RequestBody value: HvacEnabledValue): HvacState {
         hvac.enabled = value.value
         return HvacState(hvac.enabled)
