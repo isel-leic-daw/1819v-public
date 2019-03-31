@@ -62,6 +62,12 @@
   * [Spring Initializr](https://start.spring.io).
 
 ## Week 6
+* [Exception handling](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-exceptionhandlers)
+* [The OpenAPI specification](https://www.openapis.org)
+  * [A Visual Guide to What's New in ~~Swagger~~ OpenAPI 3.0.](https://blog.readme.io/an-example-filled-guide-to-swagger-3-2/)
+* [API Explorer](https://github.com/sky-uk/api-explorer)
+* [schema.org](http://schema.org)
+* [Podcast feed example](http://feeds.feedburner.com/se-radio?format=xml)
 
 ## Week 7
 
