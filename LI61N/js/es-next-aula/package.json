@@ -1,0 +1,21 @@
+{
+  "name": "es-next-aula",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "jest": "^24.7.0",
+    "standard": "^12.0.1"
+  },
+  "standard": {
+    "env": [
+      "jest", "browser"
+    ]
+  }
+}
