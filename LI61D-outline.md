@@ -116,6 +116,19 @@
 
 ## Week 8
 ### 10/04/2019 - Creating a Web UI
+* The React framework: Introduction
+  * Motivation
+  * Programming model
+* Bootstrapping a React based frontend
+  * [Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
+* Core React concepts:
+  * [JSX](https://reactjs.org/docs/introducing-jsx.html)
+  * [Elements] (https://reactjs.org/docs/rendering-elements.html)
+  * [Components and props](https://reactjs.org/docs/components-and-props.html)
+
+* For reference:
+  * [Getting Started](https://reactjs.org/docs/getting-started.html)
+  * [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
 
 ## Week 9
 
