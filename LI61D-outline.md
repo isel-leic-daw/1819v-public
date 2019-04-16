@@ -105,8 +105,28 @@
   * [Spring MVC HTTP Caching](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-caching)
 
 ## Week 7
+### 1/04/2019 - Practical class
+* Project phase 1 - Design and implementation of the HTTP-based API 
+### 3/04/2019 - Documenting Web APIs
+* Definition of web APIs using [Open API Specification](https://swagger.io/specification/#specification)
+  * Manual edition (e.g. [Swagger Editor](https://editor.swagger.io/))
+  * Automatic generation (e.g. [Springfox](http://springfox.github.io/springfox/docs/current/))
+* Documenting the Web API from its definition in Open API
+  * Automatic generation of a UI for accesing the documentation (e.g. [Springfox Swagger UI](http://springfox.github.io/springfox/docs/current/#springfox-swagger-ui))
 
 ## Week 8
+### 10/04/2019 - Creating a Web UI
+* The React framework: Introduction
+  * Motivation and programming model
+* Bootstrapping a React based frontend
+  * [Create React App](https://facebook.github.io/create-react-app/docs/getting-started)
+* Core React concepts:
+  * [JSX](https://reactjs.org/docs/introducing-jsx.html)
+  * [Elements](https://reactjs.org/docs/rendering-elements.html)
+  * [Components and props](https://reactjs.org/docs/components-and-props.html)
+* For reference:
+  * [Getting Started](https://reactjs.org/docs/getting-started.html)
+  * [Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
 
 ## Week 9
 
