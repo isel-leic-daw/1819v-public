@@ -6,7 +6,39 @@ import ReactDOM from 'react-dom'
 // Render a single element with text inside
 function example0 () {
   ReactDOM.render(
-    React.createElement('h1', {}, 'Hello world'),
+    React.createElement('h1', {}, 'Hello World'),
+    document.getElementById('container')
+  )
+}
+
+// Render a list
+
+const students = [
+  { name: 'Alice', number: 123000 },
+  { name: 'Bob', number: 456 },
+  { name: 'Carol', number: 789 }
+]
+
+function Student ({ student: { name, number } }) {
+  return (
+    <ul>
+      <li>Name: {name} </li>
+      <li>Number: {number} </li>
+    </ul>
+  )
+}
+
+function Students ({ studentList }) {
+  return (
+    <div>
+      {studentList.map(student => <Student student={student} key={student.number}>foo</Student>)}
+    </div>
+  )
+}
+
+function example4 () {
+  ReactDOM.render(
+    <Students studentList={students} />,
     document.getElementById('container')
   )
 }
@@ -56,4 +88,4 @@ function example3 () {
   }, 1000)
 }
 
-export { example0, example1, example2, example3 }
+export { example0, example1, example2, example3, example4 }
