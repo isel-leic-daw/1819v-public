@@ -133,6 +133,7 @@
 * React Components, revisited
   * [State and lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
   * [React.Component API](https://reactjs.org/docs/react-component.html)
+  * [Fragments](https://reactjs.org/docs/fragments.html)
 * Application design considerations
   * [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
   * Applying HATEOAS principles to the client
@@ -142,7 +143,7 @@
   * [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
   * [Promises, classes, destructuring, modules, transpilation](http://es6-features.org/)
 * Documentation on CORS
-  * ["Designing evolvable Web APIs: Chapter 15"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch15.html)]
+  * ["Designing evolvable Web APIs: Chapter 15"](https://www.oreilly.com/library/view/designing-evolvable-web/9781449337919/ch15.html)
   * [Configuring CORS in Spring MVC](https://www.baeldung.com/spring-cors)
 ## Week 10
 * Easter Holydays
