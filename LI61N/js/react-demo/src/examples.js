@@ -19,11 +19,11 @@ const students = [
   { name: 'Carol', number: 789 }
 ]
 
-function Student ({ student: { name, number } }) {
+function Student ({ student }) {
   return (
     <ul>
-      <li>Name: {name} </li>
-      <li>Number: {number} </li>
+      <li>Name: {student.name} </li>
+      <li>Number: {student.number} </li>
     </ul>
   )
 }
@@ -31,7 +31,11 @@ function Student ({ student: { name, number } }) {
 function Students ({ studentList }) {
   return (
     <div>
-      {studentList.map(student => <Student student={student} key={student.number}>foo</Student>)}
+      {studentList.map(student =>
+        <Student
+          student={student}
+          key={student.number}>foo
+        </Student>)}
     </div>
   )
 }
