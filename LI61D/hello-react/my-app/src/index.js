@@ -1,26 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-function Tautology({content, text}) {
-    return (
-        <div>{content} <em>{text}</em></div>
-    )
-}
+import { initCounter, Counter } from './counter'
 
-class Clock extends React.Component {
-    render() {
-        return <div>{new Date().toLocaleString()}</div>
-    }
-}
+// import { renderPage } from './clock'
+// setInterval(renderPage, 1000)
 
-function renderPage() {
-    ReactDOM.render(
-        <div>
-           <Tautology content="SLB, O MAIOR obviamente!!!" text="WOW" />
-           <Clock />
-        </div>,
-        document.getElementById('root')
-    )        
-}
+const counter = initCounter(5)
+counter.increment()
+counter.increment()
 
-setInterval(renderPage, 1000)
+ReactDOM.render(
+    <Counter model = { counter } />,
+    document.getElementById('root')
+)
