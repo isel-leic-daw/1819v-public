@@ -98,6 +98,7 @@
 * [Glossary of React terms](https://reactjs.org/docs/glossary.html).
 
 ## Week 10
+* [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
 ## Week 11
 
