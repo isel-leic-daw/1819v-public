@@ -148,7 +148,8 @@
 ## Week 10
 * Easter Holydays
 ## Week 11
-
+### 1/04/2019 - Practical class
+* Project phase 2 - Design and implementation of a Web client for the HTTP API of phase 1
 ## Week 12
 
 ## Week 13
