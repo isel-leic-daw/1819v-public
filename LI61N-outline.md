@@ -70,12 +70,35 @@
 * [Podcast feed example](http://feeds.feedburner.com/se-radio?format=xml)
 
 ## Week 7
+* ES6 - promises, classes, destructuring, modules, transpilation, fetch.
+  * [TC39 standardisation process](http://2ality.com/2015/11/tc39-process.html)
+  * [TC39 proposals](https://github.com/tc39/proposals/blob/master/finished-proposals.md)
+* [Jest](https://facebook.github.io/jest/)
+* [StandardJS](https://standardjs.com/)
+* [Exploring JS](http://exploringjs.com/)
+  * See: restructuring, spread and rest operators, string templates, classes, promises, and async-await 
+* [Using `fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+* Modules
+  * [CommonJS Modules](http://www.commonjs.org/specs/modules/1.0/)
+  * ["Module Patterns"](https://leanpub.com/modulepatterns)
+* [Examples](https://github.com/isel-leic-daw/1819v-public/tree/master/LI61N/js/es-next-aula)
 
 ## Week 8
+* Introduction to [React](https://reactjs.org)
+  * UI definition as a function from a model to an element tree.
+  * [Virtual DOM](https://reactjs.org/docs/faq-internals.html).
+  * Elements and components
+  * See [`https://reactjs.org/docs/getting-started.html`](https://reactjs.org/docs/getting-started.html)
+  * See [React as a UI Runtime](https://overreacted.io/react-as-a-ui-runtime/)
 
 ## Week 9
+* React - component lifecycle, components vs. instance vs. elements, application state management, examples.
+* [React Components, Elements, and Instances](https://reactjs.org/blog/2015/12/18/react-components-elements-and-instances.html).
+* [Update on Async Rendering](https://reactjs.org/blog/2018/03/27/update-on-async-rendering.html) - contains usage examples for the "new" lifecycle methods.
+* [Glossary of React terms](https://reactjs.org/docs/glossary.html).
 
 ## Week 10
+* [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
 ## Week 11
 
