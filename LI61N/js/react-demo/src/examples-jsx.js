@@ -42,6 +42,7 @@ class ShowHide extends React.Component {
       show: true,
       buttonValue: 'hide'
     }
+    this.toggle = this.toggle.bind(this)
   }
 
   toggle () {
@@ -54,14 +55,13 @@ class ShowHide extends React.Component {
 
   render () {
     console.log('ShowHide.render')
+    let display = this.state.show ? { display: 'block' } : { display: 'none' }
     return (
       <div>
-        <button onClick={() => this.toggle()}>[{this.state.buttonValue}]</button>
-        {this.state.show ? (
-          <div>
-            {this.props.children}
-          </div>
-        ) : <div />}
+        <button onClick={this.toggle}>[{this.state.buttonValue}]</button>
+        <div style={display}>
+          {this.props.children}
+        </div>
       </div>
     )
   }
@@ -142,10 +142,74 @@ class Clock extends React.Component {
   }
 }
 
+class Clock2 extends React.Component {
+  constructor (props) {
+    super(props)
+    console.log('Clock2.ctor')
+    this.state = {
+      instant: new Date()
+    }
+  }
+
+  render () {
+    console.log('Clock2.render')
+    return this.props.children(this.state.instant)
+  }
+
+  componentDidMount () {
+    console.log('Clock2.CDM')
+    this.intervalId = setInterval(() => this.tick(), 1000)
+  }
+
+  componentWillUnmount () {
+    clearInterval(this.intervalId)
+  }
+
+  tick () {
+    console.log('Clock2.tick')
+    this.setState({ instant: new Date() })
+  }
+}
+
+function SpecialText ({ text }) {
+  return (
+    <span>[{text.toString()}]</span>
+  )
+}
+
+class Counter extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      counter: 0
+    }
+  }
+
+  render () {
+    return (
+      <div>
+        counter: {this.state.counter}
+        <button onClick={() => this.add(1)}>up</button>
+        <button onClick={() => this.add(-1)}>down</button>
+      </div>
+    )
+  }
+
+  add (delta) {
+    this.setState(({ counter }) => ({ counter: counter + delta }))
+  }
+}
+
 function example3 () {
   setInterval(() => {
     ReactDOM.render(
-      <div><Show date={new Date()} /></div>,
+      <Clock2>
+        {time =>
+          <div>
+            <SpecialText text={time} />
+            <SpecialText text={time} />
+          </div>}
+      </Clock2>,
       document.getElementById('container'))
   }
   , 1000)
@@ -175,7 +239,9 @@ function example4 () {
   ReactDOM.render(
     <div>
       <h1>Example 4</h1>
-      <TextBox />
+      <ShowHide>
+        <Counter />
+      </ShowHide>
     </div>,
     document.getElementById('container')
   )

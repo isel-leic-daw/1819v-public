@@ -1,5 +1,8 @@
-// import { example4 } from './examples'
-import { example4 } from './examples-jsx'
-// import { example1 } from './examples-state'
+import ReactDOM from 'react-dom'
+import React from 'react'
+import App from './app'
 
-example4()
+ReactDOM.render(
+  <App />,
+  document.getElementById('container')
+)
