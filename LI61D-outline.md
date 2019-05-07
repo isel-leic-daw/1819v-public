@@ -148,9 +148,20 @@
 ## Week 10
 * Easter Holydays
 ## Week 11
-### 1/04/2019 - Practical class
+### 1/05/2019 - Practical class
 * Project phase 2 - Design and implementation of a Web client for the HTTP API of phase 1
 ## Week 12
+### 6/05/2019 - Creating a Web UI, continued
+* React patterns:
+  * [Controlled Components](https://reactjs.org/docs/forms.html)
+  * [Render Props](https://reactjs.org/docs/render-props.html)
+  * [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)
+* Declarative routing in React
+  * [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+* Further considerations regarding application design
+  * Applying HATEOAS principles on the client: _trade-offs_
+  * HATEOAS on the Web API
+    * [Json Home](https://tools.ietf.org/html/draft-nottingham-json-home-02)
 
 ## Week 13
 
