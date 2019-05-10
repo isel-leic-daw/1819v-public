@@ -148,9 +148,35 @@
 ## Week 10
 * Easter Holydays
 ## Week 11
-### 1/04/2019 - Practical class
+### 29/04/2019 - Practical class
 * Project phase 2 - Design and implementation of a Web client for the HTTP API of phase 1
 ## Week 12
+### 6/05/2019 - Creating a Web UI, continued
+* React patterns:
+  * [Controlled Components](https://reactjs.org/docs/forms.html)
+  * [Render Props](https://reactjs.org/docs/render-props.html)
+  * [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)
+* Declarative routing in React
+  * [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+* Further considerations regarding application design
+  * Applying HATEOAS principles on the client: _trade-offs_
+  * HATEOAS on the Web API
+    * [Json Home](https://tools.ietf.org/html/draft-nottingham-json-home-02)
+
+### 8/05/2019 - 
+* Considerations on the implementation of Web APIs using Spring Boot and Spring MVC
+* Optional content:
+  * Spring Data JPA
+    * [JPA compiller plugin](https://kotlinlang.org/docs/reference/compiler-plugins.html#jpa-support)
+    * [Spring Data JPA starter](https://spring.io/projects/spring-data-jpa#overview)
+    * [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
+    * [JPA Reference Docs](https://docs.spring.io/spring-data/jpa/docs/2.1.6.RELEASE/reference/html/)
+  * Spring Security
+    * [Spring Security starter](https://spring.io/projects/spring-security#overview)
+    * [Spring Security Architecture](https://spring.io/guides/topicals/spring-security-architecture)
+    * [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
+    * [Spring Security Reference Docs](https://docs.spring.io/spring-security/site/docs/current/reference/html5/)
+
 
 ## Week 13
 
