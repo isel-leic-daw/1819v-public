@@ -3,6 +3,7 @@ import RepoSelect from './repo-select'
 import IssueList from './issue-list'
 import RouterIntro from './router-intro'
 import FetcherExample from './fetcher-example'
+import { OidcDemo } from './oidc'
 
 const repos = {
   'daw': 'https://api.github.com/repos/isel-leic-daw/1819v-public/issues',
@@ -12,7 +13,8 @@ const repos = {
 export default function (props) {
   return (
     <>
-      <FetcherExample />
+      <h1>OIDC Demo</h1>
+      <OidcDemo />
     </>
   )
 }

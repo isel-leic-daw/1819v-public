@@ -4,7 +4,8 @@ module.exports = {
   mode: 'development',
   devServer: {
     contentBase: './dist',
-    historyApiFallback: true
+    historyApiFallback: true,
+    port: 9000
   },
   plugins: [
     new CopyWebpackPlugin([{
