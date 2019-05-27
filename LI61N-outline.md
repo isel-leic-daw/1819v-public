@@ -101,8 +101,13 @@
 * [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
 ## Week 11
+* [Browser History API](https://developer.mozilla.org/en-US/docs/Web/API/History)
+* [React Router](https://reacttraining.com/react-router/)
+  * [Example - authentication flow with redirects](https://reacttraining.com/react-router/web/example/auth-workflow)
 
 ## Week 12
+
+* Lab classes.
 
 ## Week 13
 
