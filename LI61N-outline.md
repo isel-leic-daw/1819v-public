@@ -122,4 +122,7 @@
 
 ## Week 14
 
+* [GCP Console](https://console.cloud.google.com)
+
+
 ## Week 15
