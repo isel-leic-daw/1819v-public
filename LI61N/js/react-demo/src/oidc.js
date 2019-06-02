@@ -8,7 +8,7 @@ var settings = {
   redirect_uri: 'http://localhost:9000/index.html',
   popup_redirect_uri: 'http://localhost:9000/index.html',
   response_type: 'code',
-  scope: 'openid email read-project',
+  scope: 'openid email read-projects',
   loadUserInfo: true
 }
 
