@@ -111,6 +111,13 @@
 
 ## Week 13
 
+* [Hypertext Transfer Protocol (HTTP/1.1): Authentication](https://tools.ietf.org/html/rfc7235)
+* [Bearer tokens](https://tools.ietf.org/html/rfc6750)
+* [OAuth 2.0](https://tools.ietf.org/html/rfc6749)
+* [OpenID Connect](https://openid.net/specs/openid-connect-core-1_0.html)
+* [MitreID Connect](https://github.com/mitreid-connect/OpenID-Connect-Java-Spring-Server)
+* [https://oauth.tools](https://oauth.tools)
+
 ## Week 14
 
 ## Week 15
