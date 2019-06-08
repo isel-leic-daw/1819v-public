@@ -1,5 +1,5 @@
-for i in `seq 1 1000`; do
-  curl -s http://35.230.153.60/hello
+for i in `seq 1 100000`; do
+  curl -s http://35.246.89.56/api/hello
   printf "\n"
 done
 

@@ -26,6 +26,6 @@ repositories {
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
-	runtime('com.google.cloud:google-cloud-logging-logback:0.46.0-alpha')
+	runtime('com.google.cloud:google-cloud-logging-logback:0.94.0-alpha')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }

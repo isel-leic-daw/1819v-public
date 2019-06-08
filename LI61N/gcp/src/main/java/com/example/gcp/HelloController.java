@@ -18,8 +18,10 @@ public class HelloController {
     private int counter = 0;
 
     @GetMapping
-    public String get(HttpServletRequest req){
-        return "hello new version from " + req.getLocalAddr();
+    public String get(HttpServletRequest req) throws InterruptedException {
+        log.info("Handling get from {}", req.getRemoteAddr());
+        Thread.sleep(2000);
+        return "hello v7 from " + req.getLocalAddr();
     }
 
     @GetMapping("/fault")
