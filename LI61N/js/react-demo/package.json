@@ -35,6 +35,6 @@
   },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
-    "parse-link-header": "^1.0.1"
+    "parse-link-header": "^2.0.0"
   }
 }
